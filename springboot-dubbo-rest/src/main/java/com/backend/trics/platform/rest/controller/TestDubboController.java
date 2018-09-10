@@ -14,7 +14,7 @@ public class TestDubboController {
 	@RequestMapping("/")
 	String index() {
 		System.out.println("输出信息!输出信息!......." + duboTest.getDubboString("213123"));
-		return duboTest.getDubboString("12321313");
+		return "login";
 	}
 
 }

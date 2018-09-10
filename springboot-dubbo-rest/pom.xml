@@ -18,5 +18,11 @@
 			<artifactId>springboot-backstage-provide</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<!--支持跳转,springboot推荐使用thymeleaf模板引擎 -->
+		<!-- <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency> -->
 	</dependencies>
+	
 </project>
