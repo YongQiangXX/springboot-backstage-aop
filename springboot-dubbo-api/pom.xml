@@ -5,5 +5,5 @@
     <artifactId>springboot-dubbo-aop</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>springboot-dubbo-api</artifactId>
+  <artifactId>springboot-backstage-api</artifactId>
 </project>

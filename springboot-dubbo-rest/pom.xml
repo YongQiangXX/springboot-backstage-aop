@@ -6,7 +6,7 @@
 		<artifactId>springboot-dubbo-aop</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>springboot-dubbo-rest</artifactId>
+	<artifactId>springboot-backstage-rest</artifactId>
 	<packaging>war</packaging>
 	<dependencies>
 		<dependency>
@@ -15,7 +15,7 @@
 		</dependency>
 		<dependency>
 			<groupId>springboot-dubbo-aop</groupId>
-			<artifactId>springboot-dubbo-provide</artifactId>
+			<artifactId>springboot-backstage-provide</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
