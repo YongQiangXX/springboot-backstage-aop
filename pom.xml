@@ -6,9 +6,9 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<modules>
-		<module>springboot-backstage-provide</module>
-		<module>springboot-backstage-api</module>
-		<module>springboot-backstage-rest</module>
+		<module>springboot-dubbo-provide</module>
+		<module>springboot-dubbo-api</module>
+		<module>springboot-dubbo-rest</module>
 	</modules>
 
 	<!-- Spring boot 父引用 -->
