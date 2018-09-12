@@ -1,12 +1,12 @@
 package com.backend.trics.platform.rest.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.backend.trics.platform.api.service.TestDubbo;
 
-@RestController
+@Controller
 public class TestDubboController {
 	@Reference
 	private TestDubbo duboTest;
