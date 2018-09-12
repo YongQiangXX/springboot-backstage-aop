@@ -23,6 +23,12 @@
 			<artifactId>springboot-backstage-provide</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+			<groupId>net.sourceforge.nekohtml</groupId>
+			<artifactId>nekohtml</artifactId>
+			<version>1.9.21</version>
+		</dependency>
+
 	</dependencies>
 
 </project>
