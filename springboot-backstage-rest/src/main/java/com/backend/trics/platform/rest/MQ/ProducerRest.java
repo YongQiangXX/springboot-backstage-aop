@@ -26,9 +26,8 @@ public class ProducerRest {
      */
     @RequestMapping(value = "/send", method = RequestMethod.GET)
     public void addQueue() {
-        Destination destination = new ActiveMQQueue("beyondLiQueueTest");
         //传入队列以及值
-        activeManager.send(destination, "success");
+        activeManager.send("success");
     }
     /**
      * 新增消息队列
@@ -36,7 +35,7 @@ public class ProducerRest {
     @RequestMapping(value = "/delaySend", method = RequestMethod.GET)
     public void delaySend() {
         //传入队列以及值
-        activeManager.delaySend("你好", "beyondLiQueueTest1", 3000L);
+        activeManager.delaySend("你好",3000L);
     }
 
 }

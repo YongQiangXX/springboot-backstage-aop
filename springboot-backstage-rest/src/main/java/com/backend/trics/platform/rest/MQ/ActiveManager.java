@@ -1,7 +1,9 @@
 package com.backend.trics.platform.rest.MQ;
 
 import org.apache.activemq.ScheduledMessage;
+import org.apache.activemq.command.ActiveMQQueue;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.jms.core.JmsMessagingTemplate;
 import org.springframework.stereotype.Component;
 
@@ -14,16 +16,20 @@ import javax.jms.*;
 public class ActiveManager {
     @Autowired
     JmsMessagingTemplate jmsMessagingTemplate;
-
+    @Value("${activemq.trade1}")
+    private String queueName;
+    @Value("${activemq.trade2}")
+    private String queueName1;
     /**
      * @param data
      * @desc 即时发送
      */
-    public void send(Destination destination, String data) {
+    public void send(String data) {
+        Destination destination = new ActiveMQQueue(queueName1);
         this.jmsMessagingTemplate.convertAndSend(destination, data);
     }
 
-    public void delaySend(String text, String queueName, Long time) {
+    public void delaySend(String text, Long time) {
         //获取连接工厂
         ConnectionFactory connectionFactory = this.jmsMessagingTemplate.getConnectionFactory();
         try {
